@@ -8,14 +8,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 ```
+![0001](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\0001-16438080640752.jpg)![0002](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\0002.jpg)![0003](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\0003.jpg)
+
 ### 1번
-(10점) 영어 알파벳 대문자와 소문자 총 52개 중에 중복되지 않는 n개로 구성된 임의의 문자열을 만드는 함수를 작성하시오.
-
-◼ 1보다 큰 정수 n을 함수의 파라미터로 받는 함수임
-
-◼ 파이썬 내장함수인 chr(x)과 ord(x) 함수를 이용하시오.
-
-◼ 함수를 이용해서 n=2 부터 10까지 반복하면서 생성된 문자열을 리스트로 만들고 화면에 출력하시오.
 
 
 ```python
@@ -83,23 +78,6 @@ l
      'VMZDizWxlq']
 
 ### 2번
-(30점) (for 또는 while 과 같은 반복문을 사용하지 말 것) A씨는 향후 1년간 다음의 수익률 분포를 가지는 두 가지 투자안 (1)과 (2)에 대해 적정 비율로 배분하여 투자하고자 한다.
-
-◼ 투자안 (1)의 연속복리수익률: 𝑟1 (평균이 6%, 표준편차가 1%)
-
-◼ 투자안 (2)의 연속복리수익률: 𝑟2 (평균이 10%, 표준편차가 50%)
-
-◼ 𝑟1과 𝑟2 의 상관계수: 30%
-투자안 (1)에 𝛼, (2)에 1−𝛼의 비율로 투자할 때 (0<𝛼<1), 1년 후 자산(wealth)은 다음과 같다. 𝑊=𝛼×𝑒𝑥𝑝(𝑟1)+(1−𝛼)×exp (𝑟2)
-A씨의 W에 대한 효용함수는 다음과 같고, 효용의 기대값(expectation)을 최대화하는 의사 결정을 한다. 𝑈(𝑊)=𝑊1−𝜌−11−𝜌
-이 식에서 𝜌는 A씨의 위험회피성향을 나타내며, 0.9 라고 가정한다.
-
-(1) (10점) 몬테카를로 시뮬레이션을 위해서 𝑟1과 𝑟2의 임의의 난수를 10,000회 발생시키고, 10,000개의 수익률에 대해서 𝑟1과 𝑟2의 평균과 표준편차(unbiased) 그리고 상관계수를 구하는 코드를 작성하시오.
-
-(2) (10점) 위의 문제 (1)에서 생성한 수익률을 이용해서 효용의 기대값을 계산하는 함수를 만드시오. 시뮬레이션된 각 시나리오에 대해서 효용을 계산하고 계산된 효용 값들을 평균한다. (파라미터로 𝛼와 수익률 Array (10,000×2)를 입력받아 기대 효용을 리턴하는 함수임) 또한 이 함수를 이용해서 𝛼=0.4라고 가정하고, A씨의 기대 효용 값을 구하시오.
-
-(3) (10점) A씨의 기대 효용의 값을 최대로 만드는 𝛼의 값을 구하시오. 단, 𝛼는 0이상 1 이하의 값이어야 한다. (scipy.optimize를 이용하시오.)
-
 
 ```python
 # (1)
@@ -124,7 +102,7 @@ r
 
     <ipython-input-45-8d157270f93e>:1: RuntimeWarning: covariance is not positive-semidefinite.
       x = np.random.multivariate_normal(mu, cov, numSim)
-    
+
 
 
 
@@ -252,99 +230,6 @@ for u in target_utiliy:
 ```
 
 ### 3번
-(60점) 주어진 2015년~2020년까지 6개 연도별 서울 아파트 실거래가 데이터와 아파트정보 데이터를 이용해서 다음 문제를 해결하는 파이썬 코드를 작성하시오.
-
-실거래가 파일:
-DealYear, DealMonth, DealDay
-거래 연월일
-AptCode
-아파트 식별 코드값
-DealAmount
-거래금액(단위: 만원, 천 단위로 콤마(,)가 표시된 문자열 데이터)
-Dong
-서울시 동명
-
-아파트데이터 파일:
-AptCode
-아파트 식별 코드값
-ApartmentName
-아파트명
-AreaforExclusiveUse
-전용면적(m2)
-BuildYear
-건축연도
-Floor
-층수
-RegionalCode
-서울시 구 코드
-CancelDealType
-거래 취소 신고 여부 (O: 거래취소신고)
-CancelDealDay
-거래 취소 신고일
-
-(1) (10점) 연도별 실거래데이터를 연결하여 하나의 DataFrame으로 만들고, DataFrame의 인덱스를 거래일자의 datetime 값이 되도록 하시오. 그리고, DealAmount 컬럼은 정수형 타입으로 변환하시오.
-이하 문제는 (1)에서 연결한 전체 데이터를 이용한다. (그러나, 연결하지 못한 경우에는 가장 마지막 데이터인 “실거래가_202012.csv” 파일 1개를 이용해도 감점은 없음)
-
-(2) (10점) 전체 데이터에서 취소 건수의 개수를 구하고, 최초로 취소 신고가 있었던 날짜를 구하시오.
-
-(3) (10점) 데이터에서 취소 거래 데이터를 제거하시오. (거래 취소 신고 데이터와 바로 직전에 있는 거래 신고 데이터를 동시에 제거시켜야 함)
-이하 문제는 (3)에서 취소 거래를 삭제한 결과 데이터를 이용한다. (그러나 삭제하지 못한 데이터를 이용하여도 감점은 없음)
-
-(4) (10점) 전체 거래에 대해 구별로 평균 거래가격이 가장 높은 동과 해당 동의 평균 매매가격을 구하시오.
-RegionalCode Dong AvgPrice
-xxxxx xxxxx xxxxx
-xxxxx xxxxx xxxxx
-xxxxx xxxxx xxxxx
-
-(5) (10점) 연도별/구별로 m2 당 거래가격의 평균을 구하고 각 연도별로 평균가격의 상승률이 가장 높은 구를 구하시오.
-Year RegionalCode AvgPrice
-xxxxx xxxxx xxxxx
-xxxxx xxxxx xxxxx
-xxxxx xxxxx xxxxx
-
-Year Highest_Region
-xxxxx xxxxx
-xxxxx xxxxx
-
-(6) (10점) 전체 거래에 대해서 DealYear와 BuildYear의 차이(=Years)를 구하고 0~5년, 6년~10년, 11년~15년, 16년~20년, 21년~30년 이상, 31년 이상으로 구분하여, 분기별 / Years 구간별로 거개건수와 m2당 거래가격의 평균을 구하시오.
-
-Quarter Counts AvgPrice 0-5 6-10 … 30- 0-5 6-10 … 30-
-2015Q1
-xxxxx
-xxxxx
-…
-xxxxx
-xxxxx
-xxxxx
-…
-xxxxx
-2015Q2
-xxxxx
-xxxxx
-…
-xxxxx
-xxxxx
-xxxxx
-…
-xxxxx
-…
-…
-…
-…
-…
-…
-…
-…
-…
-2020Q4
-xxxxx
-xxxxx
-…
-xxxxx
-xxxxx
-xxxxx
-…
-xxxxx
 
 
 ```python
@@ -472,7 +357,7 @@ df_all.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -585,7 +470,7 @@ df_all
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -833,7 +718,7 @@ df_all
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1025,7 +910,7 @@ region
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1156,7 +1041,7 @@ df_all.iloc[:,-8:]
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1325,7 +1210,7 @@ df_price
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1416,7 +1301,7 @@ df_ret
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1679,7 +1564,7 @@ df_all
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }

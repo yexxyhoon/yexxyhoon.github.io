@@ -139,7 +139,7 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "GitHub"
+    - label: ""
       icon: "fab fa-fw fa-github"
       url: "https://github.com/yexxy_hoon/"
     - label: "GitLab"
@@ -148,10 +148,10 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
+    - label: ""
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/yeezy_hoon/"
-    - label: "Linkedin"
+    - label: ""
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jihoon-lee-49674618b/"
 

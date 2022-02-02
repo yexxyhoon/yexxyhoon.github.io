@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Jaden's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Jihoon(Jaden) Lee"
+name                     : "Jihoon Lee"
 description              : "beating the market in a data-driven way"
 url                      : "https://yexxyhoon.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jihoon(Jaden) Lee"
+  name             : "Jihoon Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "KAIST Master of Finanlcial Engineering candidate"
+  bio              : "KAIST MFE candidate"
   location         : "Seoul, Yeouido"
   email            : "jihoonl0414@kaist.ac.kr"
   links:

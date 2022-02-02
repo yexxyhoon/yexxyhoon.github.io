@@ -122,7 +122,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yexxy_hoon/"
+      url: "https://github.com/yexxyhoon/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/yeezy_hoon/"
@@ -141,7 +141,7 @@ footer:
       # url:
     - label: ""
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yexxy_hoon/"
+      url: "https://github.com/yexxyhoon/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:

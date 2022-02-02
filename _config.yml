@@ -125,7 +125,7 @@ author:
       url: "https://github.com/yexxy_hoon/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/yeezy_hoon/"
+      # url: "https://instagram.com/yeezy_hoon/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jihoon-lee-49674618b/"
@@ -150,7 +150,7 @@ footer:
       # url:
     - label: ""
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/yeezy_hoon/"
+      # url: "https://instagram.com/yeezy_hoon/"
     - label: ""
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jihoon-lee-49674618b/"

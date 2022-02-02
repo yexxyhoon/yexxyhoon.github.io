@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 ```
-### 1번![1](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\1-16438097689151.jpg)
+### 1번![1](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\1.jpg)
 
 
 ```python
@@ -229,7 +229,7 @@ for u in target_utiliy:
     res = maximize(u, a0, )
 ```
 
-### 3번![3-1](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\3-1-16438099031223.jpg)![3-2](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\3-2-16438099200954.jpg)
+### 3번![3-1](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\3-1.jpg)![3-2](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\3-2.jpg)
 
 
 ```python

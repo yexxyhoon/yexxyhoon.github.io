@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 ```
-### 1번
+### 1번![1](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\1-16438097689151.jpg)
 
 
 ```python
@@ -65,17 +65,19 @@ l
 
 
 
-    ['VN',
-     'Rdr',
-     'AxBo',
-     'yltpx',
-     'fTdKGv',
-     'AnEsayj',
-     'xqsQpOKS',
-     'CgAsfqkyh',
-     'VMZDizWxlq']
+```python
+['VN',
+ 'Rdr',
+ 'AxBo',
+ 'yltpx',
+ 'fTdKGv',
+ 'AnEsayj',
+ 'xqsQpOKS',
+ 'CgAsfqkyh',
+ 'VMZDizWxlq']
+```
 
-### 2번
+### 2번![2](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\2.jpg)
 
 ```python
 # (1)
@@ -227,7 +229,7 @@ for u in target_utiliy:
     res = maximize(u, a0, )
 ```
 
-### 3번
+### 3번![3-1](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\3-1-16438099031223.jpg)![3-2](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\3-2-16438099200954.jpg)
 
 
 ```python
@@ -1825,16 +1827,18 @@ df_all['Counts']
 
 
 
-    2015Q1     21-30
-    2015Q1      6-10
-    2015Q1     11-15
-    2015Q1     21-30
-    2015Q1     16-20
-               ...  
-    2020Q4    31년 이상
-    2020Q4      6-10
-    2020Q4      6-10
-    2020Q4     11-15
-    2020Q4       0-5
-    Freq: Q-DEC, Name: Counts, Length: 576324, dtype: category
-    Categories (6, object): ['0-5' < '6-10' < '11-15' < '16-20' < '21-30' < '31년 이상']
+```python
+2015Q1     21-30
+2015Q1      6-10
+2015Q1     11-15
+2015Q1     21-30
+2015Q1     16-20
+           ...  
+2020Q4    31년 이상
+2020Q4      6-10
+2020Q4      6-10
+2020Q4     11-15
+2020Q4       0-5
+Freq: Q-DEC, Name: Counts, Length: 576324, dtype: category
+Categories (6, object): ['0-5' < '6-10' < '11-15' < '16-20' < '21-30' < '31년 이상']
+```

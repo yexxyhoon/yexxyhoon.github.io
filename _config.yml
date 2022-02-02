@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jaden's blog"
+title                    : "beating the market in a data-driven way"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jihoon Lee"
@@ -110,7 +110,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jihoonl0414@kaist.ac.kr"
+      # url: "mailto:jihoonl0414@kaist.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"

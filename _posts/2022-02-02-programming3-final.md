@@ -1,5 +1,7 @@
+---
 layout: single
-title:  "금융공학 프로그래밍3 "
+title:  "금융공학 프로그래밍3 시험"
+---
 ```python
 import numpy as np
 import matplotlib.pyplot as plt

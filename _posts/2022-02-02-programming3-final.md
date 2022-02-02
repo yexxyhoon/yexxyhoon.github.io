@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 ```
-![0001](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\0001-16438080640752.jpg)![0002](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\0002.jpg)![0003](C:\Users\jihoonlee\OneDrive\blog\yexxyhoon.github.io\images\2022-02-02-programming3-final\0003.jpg)
-
 ### 1번
 
 

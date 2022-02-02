@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Jihoon Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "KAIST MFE candidate"
+  bio              : "MFE candidate at KAIST"
   location         : "Yeouido, Seoul"
   email            : "jihoonl0414@kaist.ac.kr"
   links:

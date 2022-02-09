@@ -106,11 +106,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "MFE candidate at KAIST"
   location         : "Yeouido, Seoul"
-  email            : "jihoonl0414@kaist.ac.kr"
+  email            : # "jihoonl0414@kaist.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:jihoonl0414@kaist.ac.kr"
+      url: "mailto:jihoonl0414@kaist.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
